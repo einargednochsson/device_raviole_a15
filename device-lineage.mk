@@ -9,6 +9,9 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
     ANGLE
+    
+# Camera
+$(call inherit-product-if-exists, vendor/google/camera/config.mk)
 
 # EUICC
 PRODUCT_COPY_FILES += \
